@@ -10,7 +10,7 @@ pipeline {
         stage('Checkout') {
             steps {
                 echo 'Cloning repository...'
-                git branch: 'master', url: 'https://github.com/ziedhannachi/playwright-demo_web_shop.git'
+                git branch: 'master', url: 'https://github.com/cirinekhoujabach/playwright-Project.git'
                 
                 // Vérifie le contenu du workspace
                 bat 'dir /s'
