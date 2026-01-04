@@ -1,0 +1,690 @@
+[
+  {
+    "description": "",
+    "elements": [
+      {
+        "description": "",
+        "id": "product-search-and-price-validation-on-demo-web-shop;search-product-and-verify-minimum-price",
+        "keyword": "Scenario",
+        "line": 16,
+        "name": "Search product and verify minimum price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 473586600
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1328980499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 504933200
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 262720699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 507741399
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233379800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 17,
+            "name": "I search for the product \"digital SLR Camera\"",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 710404100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 18,
+            "name": "search results should be displayed",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:19"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 100603499
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 19,
+            "name": "the first product price should be at least 500",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 9552100
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 678597999
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@cart",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-search-and-price-validation-on-demo-web-shop;search-for-a-nonexistent-product",
+        "keyword": "Scenario",
+        "line": 24,
+        "name": "Search for a nonexistent product",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 277511100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 986223500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 444960200
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 256274500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 488620899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 224371500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 25,
+            "name": "I search for the product \"xyz-not-existing-product\"",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629851699
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 26,
+            "name": "no product should be displayed",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:24"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 140471700
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 629466099
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@cart",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-search-and-price-validation-on-demo-web-shop;search-product-and-sort-by-lowest-price",
+        "keyword": "Scenario",
+        "line": 31,
+        "name": "Search product and sort by lowest price",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 298075299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1020649900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 431829899
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 271194800
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 481802899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 206415899
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 32,
+            "name": "I search for the product \"camera\"",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 663945700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 33,
+            "name": "I sort products by price from low to high",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:41"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198832300
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 34,
+            "name": "the first product price should be at least 500",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:29"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 640559199
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 769070899
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@cart",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      },
+      {
+        "description": "",
+        "id": "product-search-and-price-validation-on-demo-web-shop;add-product-with-quantity-greater-than-one",
+        "keyword": "Scenario",
+        "line": 39,
+        "name": "Add product with quantity greater than one",
+        "steps": [
+          {
+            "keyword": "Before",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 265625700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to webShop website",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1052710100
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 6,
+            "name": "I click on the Log in link",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 441606400
+            }
+          },
+          {
+            "arguments": [
+              {
+                "rows": [
+                  {
+                    "cells": [
+                      "email",
+                      "{userEmail}"
+                    ]
+                  },
+                  {
+                    "cells": [
+                      "password",
+                      "$Z4J2ra!U98h!"
+                    ]
+                  }
+                ]
+              }
+            ],
+            "keyword": "When ",
+            "line": 7,
+            "name": "I enter valid credentials",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:12"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 281621900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "I click on the Log in button",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:28"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 498617900
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "I verify that I am redirected to the homepage with email '{userEmail}'",
+            "match": {
+              "location": "tests\\steps\\login\\LoginShopSteps.ts:34"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 244671299
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 40,
+            "name": "I search for the product \"camera\"",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:10"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 655048500
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I add the first product to the cart",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:51"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1587225700
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I update the cart quantity to 3",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:58"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1257314999
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 43,
+            "name": "the cart total price should be at least 1500",
+            "match": {
+              "location": "tests\\steps\\products\\ProductSearchSteps.ts:67"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 142815600
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "result": {
+              "status": "passed",
+              "duration": 787152500
+            },
+            "embeddings": [
+              {
+                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
+                "mime_type": "text/plain"
+              },
+              {
+                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
+                "mime_type": "text/plain"
+              }
+            ]
+          }
+        ],
+        "tags": [
+          {
+            "name": "@e2e",
+            "line": 1
+          },
+          {
+            "name": "@cart",
+            "line": 1
+          }
+        ],
+        "type": "scenario"
+      }
+    ],
+    "id": "product-search-and-price-validation-on-demo-web-shop",
+    "line": 2,
+    "keyword": "Feature",
+    "name": "Product search and price validation on Demo Web Shop",
+    "tags": [
+      {
+        "name": "@e2e",
+        "line": 1
+      },
+      {
+        "name": "@cart",
+        "line": 1
+      }
+    ],
+    "uri": "tests\\feature\\negative-path\\product-search-and-cart.feature"
+  }
+]
