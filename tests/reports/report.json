@@ -4,17 +4,17 @@
     "elements": [
       {
         "description": "",
-        "id": "product-search-on-webshop-website;search-for-a-product-by-keyword",
-        "keyword": "Scenario Outline",
-        "line": 23,
-        "name": "Search for a product by keyword",
+        "id": "wishlist-management-on-webshop-website;add-product-to-wishlist",
+        "keyword": "Scenario",
+        "line": 9,
+        "name": "Add product to wishlist",
         "steps": [
           {
             "keyword": "Before",
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 202539099
+              "duration": 230696699
             }
           },
           {
@@ -27,33 +27,33 @@
             },
             "result": {
               "status": "passed",
-              "duration": 991128100
+              "duration": 976230800
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
-            "line": 18,
-            "name": "I search for \"computer\"",
+            "line": 6,
+            "name": "I add \"Black & White Diamond Heart\" to wishlist",
             "match": {
-              "location": "tests\\steps\\header\\SearchForValidItemSteps.ts:6"
+              "location": "tests\\steps\\wishlistManagement\\AddProductToWishlist.ts:5"
             },
             "result": {
               "status": "passed",
-              "duration": 608329200
+              "duration": 1691291099
             }
           },
           {
             "arguments": [],
             "keyword": "Then ",
-            "line": 19,
-            "name": "I should see \"Build your own cheap computer\"",
+            "line": 10,
+            "name": "I should see \"Black & White Diamond Heart\" in wishlist",
             "match": {
-              "location": "tests\\steps\\header\\SearchForValidItemSteps.ts:12"
+              "location": "tests\\steps\\wishlistManagement\\AddProductToWishlist.ts:13"
             },
             "result": {
               "status": "passed",
-              "duration": 71678299
+              "duration": 343847299
             }
           },
           {
@@ -61,7 +61,7 @@
             "hidden": true,
             "result": {
               "status": "passed",
-              "duration": 389956800
+              "duration": 477467800
             },
             "embeddings": [
               {
@@ -81,108 +81,31 @@
             "line": 1
           },
           {
-            "name": "@search_Product",
-            "line": 7
-          }
-        ],
-        "type": "scenario"
-      },
-      {
-        "description": "",
-        "id": "product-search-on-webshop-website;search-for-a-product-by-keyword",
-        "keyword": "Scenario Outline",
-        "line": 24,
-        "name": "Search for a product by keyword",
-        "steps": [
-          {
-            "keyword": "Before",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 135456900
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Given ",
-            "line": 5,
-            "name": "I navigate to webShop website",
-            "match": {
-              "location": "tests\\steps\\login\\LoginShopSteps.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 892862299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "When ",
-            "line": 18,
-            "name": "I search for \"invalidproduct123\"",
-            "match": {
-              "location": "tests\\steps\\header\\SearchForValidItemSteps.ts:6"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 556896299
-            }
-          },
-          {
-            "arguments": [],
-            "keyword": "Then ",
-            "line": 19,
-            "name": "I should see \"No products were found that matched your criteria.\"",
-            "match": {
-              "location": "tests\\steps\\header\\SearchForValidItemSteps.ts:12"
-            },
-            "result": {
-              "status": "passed",
-              "duration": 67015499
-            }
-          },
-          {
-            "keyword": "After",
-            "hidden": true,
-            "result": {
-              "status": "passed",
-              "duration": 366137999
-            },
-            "embeddings": [
-              {
-                "data": "QnJvd3NlcjpjaHJvbWl1bSBWZXJzaW9uOiAxNDMuMC43NDk5LjQ=",
-                "mime_type": "text/plain"
-              },
-              {
-                "data": "U3RhdHVzOiBQQVNTRUQuIER1cmF0aW9uOjBz",
-                "mime_type": "text/plain"
-              }
-            ]
-          }
-        ],
-        "tags": [
-          {
-            "name": "@e2e",
+            "name": "@wishlist",
             "line": 1
           },
           {
-            "name": "@search_Product",
-            "line": 7
+            "name": "@add_wishlist",
+            "line": 8
           }
         ],
         "type": "scenario"
       }
     ],
-    "id": "product-search-on-webshop-website",
+    "id": "wishlist-management-on-webshop-website",
     "line": 2,
     "keyword": "Feature",
-    "name": "Product search on webShop website",
+    "name": "Wishlist management on webShop website",
     "tags": [
       {
         "name": "@e2e",
         "line": 1
+      },
+      {
+        "name": "@wishlist",
+        "line": 1
       }
     ],
-    "uri": "tests\\feature\\happy-path\\e2e\\product-search.feature"
+    "uri": "tests\\feature\\happy-path\\e2e\\wishlist-management.feature"
   }
 ]

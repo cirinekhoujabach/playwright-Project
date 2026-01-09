@@ -37,6 +37,7 @@ export class JewelryPage extends BaseAction {
       }
 
      async verifyJewelryProductDisplayed(productName: string) {
+          await this.page.waitForLoadState('domcontentloaded');
          await this.assertions.expectVisible(WISHLIST_LOCATORS.wishListItemByName(productName));
        }
 
