@@ -26,9 +26,9 @@ export class ShoppingCartPage extends BaseAction {
   async verifyTotalPriceAtLeast(minPrice: number) {
     const text = await this.page
       .locator(SHOPPING_CART_LOCATORS.totalPrice)
-      .textContent();
+      .innerText();
 
-    const price = parseFloat(text!.replace(/[^0-9.]/g, ''));
+    const price = Number(text.replace(/[^0-9.]/g, ''));
     expect(price).toBeGreaterThanOrEqual(minPrice);
   }
 
