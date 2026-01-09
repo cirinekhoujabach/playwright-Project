@@ -16,12 +16,12 @@ export class SearchItemPage extends BaseAction {
     await this.fillText(HEADER_LOCATORS.searchToolBar, itemName);
     await this.clickElements(HEADER_LOCATORS.searchButton);
 }
-  async verifyItemSearchResults(itemName:string) {
-   
-    await this.assertions.expectVisible(COMPUTER_LOCATORS.desktopItem.replace('${itemName}', itemName));
-  }
-
+  async verifyItemSearchResults(itemName: string) {
+  await this.assertions.expectVisible(COMPUTER_LOCATORS.computerItemSearchResult(itemName));
+}
+ 
    async verifyNoItemFoundMessage(message:string) {
-    await this.assertions.expectVisible(HEADER_LOCATORS.searchNotFoundMessage)
+    await this.assertions.expectVisible(HEADER_LOCATORS.searchNotFoundMessage);
+    await this.assertions.expectText(HEADER_LOCATORS.searchNotFoundMessage, message);
    }
 }

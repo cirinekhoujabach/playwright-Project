@@ -20,5 +20,5 @@ Feature: Product search on webShop website
    
     Examples:
       | product             | expectedResult                                       |
-      | computer            |  computer                                            |
+      | computer            |  Build your own cheap computer                       |
       | invalidproduct123   |No products were found that matched your criteria.    |

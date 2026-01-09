@@ -9,9 +9,13 @@ When ('I search for {string}', async function (this:CustomWorld, itemName: strin
     await searchValidItemPage.searchForItem(itemName);
 });
 
-Then (' Then I should see {string}', async function (this:CustomWorld, itemName: string) {
+Then ('I should see {string}', async function (this:CustomWorld, itemName: string) {
     const page = this.page!;    
    const searchValidItemPage = new SearchItemPage(page);
- await searchValidItemPage.verifyItemSearchResults(itemName);
+   if (itemName.includes('No products')) {
+     await searchValidItemPage.verifyNoItemFoundMessage(itemName);
+   } else  {
+     await searchValidItemPage.verifyItemSearchResults(itemName);
+    }
 });
 

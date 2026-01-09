@@ -2,10 +2,11 @@ export const COMPUTER_LOCATORS = {
   computersMenu: '//ul[@class="top-menu"]//a[normalize-space()="Computers"]',
   desktopsSubmenu: '//ul[@class="top-menu"]//a[normalize-space()="Desktops"]',
   //computerItem: '//a[normalize-space()="Build your own cheap computer"]',
-  computerItem: (itemName: string) =>`//a[contains(normalize-space(), "${itemName}")]`,
+  computerItem: (itemName: string) =>`xpath=//a[contains(normalize-space(), "${itemName}")]`,
+  computerItemSearchResult: (itemName: string) =>`xpath=//h2[contains(@class,"product-title")]//a[normalize-space()="${itemName}"]`,
   firstComputerAddToCart:'//input[@id="add-to-cart-button-72"]',
   // Locator dynamique pour le panier
-  cartItemByName: (productName: string) =>`//table[contains(@class,"cart")]//a[normalize-space()="${productName}"]`,
+  cartItemByName: (productName: string) =>`xpath=//table[contains(@class,"cart")]//a[normalize-space()="${productName}"]`,
   firstProductAddToCart: '//body[1]/div[4]/div[1]/div[4]/div[2]/div[2]/div[2]/div[3]/div[1]/div[1]/div[2]/div[3]/div[2]/input[1]',
   shoppingCartLink: 'a[href="/cart"]',
   cartItemName: '//h1[normalize-space()="Build your own cheap computer"]',
